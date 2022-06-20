@@ -23,7 +23,7 @@ Topic A, Topic B, and Topic C each work best for different kinds of data. We com
 
 	Compressed image down to: **19,909,220 bytes**, **180%** of the original size.
 
-	LZW does not consistently compress images and sometimes the encoded file size may be larger than the original. This effect can be seen with this picture, as it almost doubled in size after "compressing". 
+	Topic B does not consistently compress images and sometimes the encoded file size may be larger than the original. This effect can be seen with this picture, as it almost doubled in size after "compressing". 
 
 
 - [**Topic C**]({{ site.posts[3].url | prepend: site.baseurl }}){: .underline--magical .scroll_top}
