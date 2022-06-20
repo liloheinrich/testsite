@@ -4,7 +4,7 @@ description: >
   Our discrete 2020 fall semester final project on the topic of exploring compression algorithms.
   We cover Topic A, Lempel-Ziv-Welch and Arithmetic Coding.
 
-baseurl: "/testsite/" # the subpath of your site, e.g. /blog/
+baseurl: "/testsite" # the subpath of your site, e.g. /blog/
 url: "https://liloheinrich.github.io" # the base hostname & protocol for your site
 
 author:
