@@ -8,7 +8,7 @@ tags: [toc]
 
 Topic A, Topic B, and Topic C each work best for different kinds of data. We compare these three algorithms by looking at the amount of compression each algorithm achieves for the following image, which is comprised of 11,059,200 bytes, or 88,473,600 bits.
 
-![original im]({{"/assets/images/Topic A/yuzu.png" | prepend: site.baseurl }}){: style="height: 500px"}
+![original im]({{"/assets/images/DCT/yuzu.png" | prepend: site.baseurl }}){: style="height: 500px"}
 
 - [**Topic A**]({{ site.posts[1].url | prepend: site.baseurl }}){: .underline--magical .scroll_top}
 
