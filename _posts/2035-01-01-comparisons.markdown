@@ -6,7 +6,7 @@ date: 2010-1-1
 tags: [toc]
 ---
 
-Topic A, Lempel-Ziv-Welch (LZW), and arithmetic encoding each work best for different kinds of data. We compare these three algorithms by looking at the amount of compression each algorithm achieves for the following image, which is comprised of 11,059,200 bytes, or 88,473,600 bits.
+Topic A, Topic B, and Topic C each work best for different kinds of data. We compare these three algorithms by looking at the amount of compression each algorithm achieves for the following image, which is comprised of 11,059,200 bytes, or 88,473,600 bits.
 
 ![original im]({{"/assets/images/DCT/yuzu.png" | prepend: site.baseurl }}){: style="height: 500px"}
 
@@ -17,7 +17,7 @@ Topic A, Lempel-Ziv-Welch (LZW), and arithmetic encoding each work best for diff
 	Compressed image down to: **3,278,353 bytes**, **29.67%** of the original size.
 
 
-- [**Lempel Ziv Welch (LZW)**]({{ site.posts[2].url | prepend: site.baseurl }}){: .underline--magical .scroll_top}
+- [**Topic B**]({{ site.posts[2].url | prepend: site.baseurl }}){: .underline--magical .scroll_top}
 
 	Works well for: Large amounts of data that contains repetitive patterns. Data with excessive variability is harder to compress. 
 
@@ -26,7 +26,7 @@ Topic A, Lempel-Ziv-Welch (LZW), and arithmetic encoding each work best for diff
 	LZW does not consistently compress images and sometimes the encoded file size may be larger than the original. This effect can be seen with this picture, as it almost doubled in size after "compressing". 
 
 
-- [**Arithmetic Coding (AC)**]({{ site.posts[3].url | prepend: site.baseurl }}){: .underline--magical .scroll_top}
+- [**Topic C**]({{ site.posts[3].url | prepend: site.baseurl }}){: .underline--magical .scroll_top}
 
 	Works well for: Data that has some symbols which appear frequently. The more similar the probablities of the symbols the less the data can be comrpessed.
 

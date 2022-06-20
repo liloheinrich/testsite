@@ -25,13 +25,13 @@ layout: default
 						{% else %}
 							<li><a class="scroll_top" href="{{ site.posts[1].url | prepend: site.baseurl }}">DCT</a></li>
 						{% endif %}
-						{% if page.title == "Lempel-Ziv-Welch" %}
+						{% if page.title == "Topic B" %}
 							<li class="active"><a class="scroll_top" href="#">LZW</a></li>
 							{% include post/navbar.html tags=ptags %}
 						{% else %}
 							<li><a class="scroll_top" href="{{ site.posts[2].url | prepend: site.baseurl }}">LZW</a></li>
 						{% endif %}
-						{% if page.title == "Arithmetic Coding" %}
+						{% if page.title == "Topic C" %}
 							<li class="active"><a class="scroll_top" href="#">AC</a></li>
 							{% include post/navbar.html tags=ptags %}
 						{% else %}

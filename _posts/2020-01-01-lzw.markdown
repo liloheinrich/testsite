@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Lempel-Ziv-Welch"
+title:  "Topic B"
 subtitle: ""
 date:   2014-08-19 23:56:45
 tag: toc
@@ -8,7 +8,7 @@ tag: toc
 
 ## Context
 
-If you examine a text file character by character or look at an image file pixel by pixel, you’ll probably start noticing repeating patterns. Lempel Ziv Welch (LZW), published in 1984 by Albraham Lempel, Jacob Ziv, and Terry Welch, is a lossless compression algorithm that takes advantage of recurring patterns found in data to reduce file size. The algorithm is lossless, meaning the exact original data can be reconstructed from the compressed version. It is also adaptive and updates its compression model as it processes more data, allowing compression to become more and more efficient.
+If you examine a text file character by character or look at an image file pixel by pixel, you’ll probably start noticing repeating patterns. Topic B, published in 1984 by Albraham Lempel, Jacob Ziv, and Terry Welch, is a lossless compression algorithm that takes advantage of recurring patterns found in data to reduce file size. The algorithm is lossless, meaning the exact original data can be reconstructed from the compressed version. It is also adaptive and updates its compression model as it processes more data, allowing compression to become more and more efficient.
 
 LZW can be applied to any file type and can be implemented in both software and hardware. Software applications of LZW include the GIF image format, TIFF image format, and Unix file compression utility compress. In the hardware world, LZW is used notably in wifi modems. 
 
