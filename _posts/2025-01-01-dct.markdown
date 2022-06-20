@@ -8,26 +8,26 @@ tag: [toc, examples]
 
 ## Context
 
-The Topic A is widely used in signal processing, image compression, and many other forms of data compression. It was invented in the early 1970s by Nasir Ahmed while researching image data compression. The DCT is extremely effective at lossy compression, as it can achieve compression ratios of up to 100:1 with acceptable quality by human perceptive standards.The DCT is the basis for JPEG compression, and is an integral part of many other image and video compression standards.
+The Topic A is widely used in signal processing, image compression, and many other forms of data compression. It was invented in the early 1970s by Nasir Ahmed while researching image data compression. The Topic A is extremely effective at lossy compression, as it can achieve compression ratios of up to 100:1 with acceptable quality by human perceptive standards.The Topic A is the basis for JPEG compression, and is an integral part of many other image and video compression standards.
 
 ## Overview
 
-The DCT can be thought of as representing images as a sum of cosine functions with varying frequencies. The basis for the DCT comes from the ability to represent a signal as amounts of each element in a set of discrete range of frequencies. This gives us a measure of what frequencies (or cosine functions) are most important in representing the signal, and allows us to  select only the frequencies that capture the most information about the image. It is important to note that in most cases the DCT results in lossy compression, where the original data is only approximated and not exactly recreated.
+The Topic A can be thought of as representing images as a sum of cosine functions with varying frequencies. The basis for the Topic A comes from the ability to represent a signal as amounts of each element in a set of discrete range of frequencies. This gives us a measure of what frequencies (or cosine functions) are most important in representing the signal, and allows us to  select only the frequencies that capture the most information about the image. It is important to note that in most cases the Topic A results in lossy compression, where the original data is only approximated and not exactly recreated.
 
 ## Algorithm
 
-Consider the case of compressing an image using the DCT. The main steps for this process are as follows:
+Consider the case of compressing an image using the Topic A. The main steps for this process are as follows:
 
 - Represent your image as a discrete matrix
-- Create a DCT matrix based on the size of your image matrix
+- Create a Topic A matrix based on the size of your image matrix
 - Find the most important or characteristic frequencies (dot product)
 - To compress, remove the frequencies that are less representative of the image
 
-![diagram overview]({{"/assets/images/DCT/overview.png" | prepend: site.baseurl }})
+![diagram overview]({{"/assets/images/Topic A/overview.png" | prepend: site.baseurl }})
 
 ### Represent an image as a matrix:
 
-![image to matrix]({{"/assets/images/DCT/image_to_matrix.png" | prepend: site.baseurl }}){: style="width:260px; float:left; margin:60px 50px; margin-bottom: 0"}
+![image to matrix]({{"/assets/images/Topic A/image_to_matrix.png" | prepend: site.baseurl }}){: style="width:260px; float:left; margin:60px 50px; margin-bottom: 0"}
 
 As an example, consider the image to the left where one half is black and the other half is white. We can start by looking at the row of pixels highlighted in blue.
 
@@ -35,45 +35,45 @@ Looking at this row, we can represent the shade of the image using numbers 0-255
 
 Doing this for the whole image, we create a matrix where each pixel in the image maps to a value in the matrix that represents its shade. With a colored image, this matrix would have a height of 3 for each RGB value. 
  
-![blocking image]({{"/assets/images/DCT/blocking.png" | prepend: site.baseurl }}){: style="width:280px; float:left; margin:0px 40px"}
+![blocking image]({{"/assets/images/Topic A/blocking.png" | prepend: site.baseurl }}){: style="width:280px; float:left; margin:0px 40px"}
 
-Typically when performing the DCT an image matrix is broken up into blocks of size 8x8 to compress individually. For example, if the image from above was 64x64 it would be broken up into the following blocks where each block is it’s own matrix. Each block will be processed separately then reassembled to create the image.
+Typically when performing the Topic A an image matrix is broken up into blocks of size 8x8 to compress individually. For example, if the image from above was 64x64 it would be broken up into the following blocks where each block is it’s own matrix. Each block will be processed separately then reassembled to create the image.
 
-### Create a DCT matrix:
+### Create a Topic A matrix:
 
-![dct equation]({{"/assets/images/DCT/equation.png" | prepend: site.baseurl }}){: style="width:280px; float:left; margin: 40px"}
+![Topic A equation]({{"/assets/images/Topic A/equation.png" | prepend: site.baseurl }}){: style="width:280px; float:left; margin: 40px"}
 
-The DCT matrix can be thought of as a matrix containing cosine functions with varying frequencies. Equation X defines the cosine value for each position i, j in the matrix, where N is the length of the matrix. Each row of the DCT matrix represents a cosine function of a given frequency determined by i and N. Within rows, each element defines the value of that function at a specific position j.
+The Topic A matrix can be thought of as a matrix containing cosine functions with varying frequencies. Equation X defines the cosine value for each position i, j in the matrix, where N is the length of the matrix. Each row of the Topic A matrix represents a cosine function of a given frequency determined by i and N. Within rows, each element defines the value of that function at a specific position j.
 
 To illustrate this matrix, consider the fifth row (cos(pi/N * 5 * (j + ½)). Plotting the row when N = 8 with changing j, we can see that it represents a cosine function of a frequency determined by N and i. 
 
-![cos wave]({{"/assets/images/DCT/cos.png" | prepend: site.baseurl }})
+![cos wave]({{"/assets/images/Topic A/cos.png" | prepend: site.baseurl }})
 
-The size N of the DCT matrix is usually 8x8 (i, j = 8) to match the size of our image matrix blocks.
+The size N of the Topic A matrix is usually 8x8 (i, j = 8) to match the size of our image matrix blocks.
 
-In the DCT matrix, higher frequency functions are in the lower right corner, whereas lower frequency functions are in the upper left corner.
+In the Topic A matrix, higher frequency functions are in the lower right corner, whereas lower frequency functions are in the upper left corner.
 
-![dct matrix]({{"/assets/images/DCT/dct_matrix.png" | prepend: site.baseurl }}){: style="width: 60%"}
+![Topic A matrix]({{"/assets/images/Topic A/Topic A_matrix.png" | prepend: site.baseurl }}){: style="width: 60%"}
 
 We will use this matrix to find how much of each cosine function is present in the image.
 
 ### The transformation:
 
-Next, we will transform our image from the spatial domain to the frequency domain. This is done by multiplying each row of our image matrix f by our DCT matrix d. This operation can be thought of as finding how similar each row of pixels is with each cosine function. This yields a new matrix a, the same size as our original image that contains coefficients for the ‘amount’ of each vector in d for each row of pixels in our original image. This operation is also normally performed across the columns of the image blocks. 
+Next, we will transform our image from the spatial domain to the frequency domain. This is done by multiplying each row of our image matrix f by our Topic A matrix d. This operation can be thought of as finding how similar each row of pixels is with each cosine function. This yields a new matrix a, the same size as our original image that contains coefficients for the ‘amount’ of each vector in d for each row of pixels in our original image. This operation is also normally performed across the columns of the image blocks. 
 
-![dct multiplication]({{"/assets/images/DCT/mult.png" | prepend: site.baseurl }}){: style="width: 90%; margin-left: 5%"}
+![Topic A multiplication]({{"/assets/images/Topic A/mult.png" | prepend: site.baseurl }}){: style="width: 90%; margin-left: 5%"}
 
 ### Compression
 
-![converted matrix]({{"/assets/images/DCT/converted.png" | prepend: site.baseurl }}){: style="width:280px; float:left; margin:40px 40px"}
+![converted matrix]({{"/assets/images/Topic A/converted.png" | prepend: site.baseurl }}){: style="width:280px; float:left; margin:40px 40px"}
 
-After representing an image block as the amount of each cosine function defined by the DCT matrix, we are left with a matrix of weights a that is the size of our blocks.
+After representing an image block as the amount of each cosine function defined by the Topic A matrix, we are left with a matrix of weights a that is the size of our blocks.
 
 To compress the image, we can perform a lossy image processing method called quantization. A quantization matrix the same size as a is created (explained further down). Next, each value in a is divided by the corresponding value from the quantization matrix and rounded to the nearest integer. The values in the quantization matrix will vary depending on the desired quality and amount of compression.
 
-Deciding the values in a quantization matrix is an interesting problem, and is usually determined based on human perception. To explain this, we must first understand what ‘high’ and ‘low’ frequencies mean in an image. Low frequencies can be thought of as slower changes throughout the image such as background colors and larger shapes. High frequencies represent faster changes in the image. These frequencies often represent textures and details in the image that are less noticeable to the human eye. For this reason, high frequencies are usually removed first during compression. In a quantization matrix, removing higher frequencies can be done by setting larger divisors in the lower right corner, to match where high frequencies are represented in the DCT matrix. 
+Deciding the values in a quantization matrix is an interesting problem, and is usually determined based on human perception. To explain this, we must first understand what ‘high’ and ‘low’ frequencies mean in an image. Low frequencies can be thought of as slower changes throughout the image such as background colors and larger shapes. High frequencies represent faster changes in the image. These frequencies often represent textures and details in the image that are less noticeable to the human eye. For this reason, high frequencies are usually removed first during compression. In a quantization matrix, removing higher frequencies can be done by setting larger divisors in the lower right corner, to match where high frequencies are represented in the Topic A matrix. 
 
-![quantization diagram]({{"/assets/images/DCT/quantization.png" | prepend: site.baseurl }}){: style="width: 90%"}
+![quantization diagram]({{"/assets/images/Topic A/quantization.png" | prepend: site.baseurl }}){: style="width: 90%"}
 
 The highest quality compression would have a quantization matrix of all 1s, meaning all data is preserved.
 
@@ -81,7 +81,7 @@ With large enough divisors in the quantization matrix, many of the values of a w
 
 ### Decoding
 
-To decode the image, the matrix a is first reconstructed by reversing the encoding method used. Then, the quantization matrix operation is undone by multiplying a by each value of the original quantization matrix. Lastly, an inverse DCT transformation is performed. To do this, we can simply multiply our matrix of weights a by the inverse of our original DCT matrix. This reconstructs our original image matrix, and we can then visualize it.
+To decode the image, the matrix a is first reconstructed by reversing the encoding method used. Then, the quantization matrix operation is undone by multiplying a by each value of the original quantization matrix. Lastly, an inverse Topic A transformation is performed. To do this, we can simply multiply our matrix of weights a by the inverse of our original Topic A matrix. This reconstructs our original image matrix, and we can then visualize it.
 
 
 ## Examples
@@ -92,14 +92,14 @@ Code used for these examples was adapted from [github.com/gabrielchristo/image-c
 {%
 	include post/imageblock.html
 	name="original im"
-	url="/assets/images/DCT/yuzu.png"
+	url="/assets/images/Topic A/yuzu.png"
 	content="Original Size: 11,059,200 bytes"
 %}
 
 {%
 	include post/imageblock.html
 	name="small compression"
-	url="/assets/images/DCT/out_5.png"
+	url="/assets/images/Topic A/out_5.png"
 	content="Compressed Size: 3,278,353 bytes|
 		 Compression Ratio (original/compressed): 3.37|
 		 Size of image was significantly reduced, yet quality remains comparable"
@@ -108,7 +108,7 @@ Code used for these examples was adapted from [github.com/gabrielchristo/image-c
 {%
 	include post/imageblock.html
 	name="medium compression"
-	url="/assets/images/DCT/out_10.png"
+	url="/assets/images/Topic A/out_10.png"
 	content="Compressed Size: 2,758,764 bytes|
 		 Compression Ratio: 4.01|
 		 Starting to see reduced quality"
@@ -117,16 +117,16 @@ Code used for these examples was adapted from [github.com/gabrielchristo/image-c
 {%
 	include post/imageblock.html
 	name="high compression"
-	url="/assets/images/DCT/out_15.png"
+	url="/assets/images/Topic A/out_15.png"
 	content="Compressed Size: 2,492,274 bytes|
 		 Compression Ratio: 4.44|
-		 Significant reduction in quality. You can see small blocks forming that are artifacts from the DCT 8x8 blocking"
+		 Significant reduction in quality. You can see small blocks forming that are artifacts from the Topic A 8x8 blocking"
 %}
 
 {%
 	include post/imageblock.html
 	name="medium compression"
-	url="/assets/images/DCT/out_50.png"
+	url="/assets/images/Topic A/out_50.png"
 	content="Compressed Size: 1,723,169 bytes|
 		 Compression Ratio: 6.42|
 		 High frequency values that correspond to textures and details have been heavily reduced. The image appears smooth from the remaining lower frequencies."
