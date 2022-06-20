@@ -1,10 +1,9 @@
-Fall 2020 semester final project on....
+Our discrete 2020 fall semester final project on the topic of exploring compression algorithms.
+We cover Discrete Cosine Transform, Lempel-Ziv-Welch and Arithmetic Coding - check it out [here](https://liloheinrich.github.io/compression/)!
 
-Check it out [here](https://liloheinrich.github.io/eitofis/)!
+<!-- Made by [@eito-fis](https://github.com/eito-fis), [@jackiezeng01](https://github.com/jackiezeng01) and [@jonaskaz](https://github.com/jonaskaz) -->
 
-Made by [@liloheinrich](https://github.com/liloheinrich) from [@eito-fis](https://github.com/eito-fis)
-
-Based on [Daktilo](https://github.com/kronik3r/daktilo) and made with [Jekyll](jekyllrb.com)
+Based on [Daktilo](https://github.com/kronik3r/daktilo) and made with [Jekyll](jekyllrb.com).
 
 # License
 

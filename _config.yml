@@ -1,9 +1,10 @@
 # Site settings
-title: eitofis
+title: Discrete-2020
 description: >
-  Fall 2022 semester final project...
+  Our discrete 2020 fall semester final project on the topic of exploring compression algorithms.
+  We cover Discrete Cosine Transform, Lempel-Ziv-Welch and Arithmetic Coding.
 
-baseurl: "/eitofis/" # the subpath of your site, e.g. /blog/
+baseurl: "/compression" # the subpath of your site, e.g. /blog/
 url: "https://liloheinrich.github.io" # the base hostname & protocol for your site
 
 author:

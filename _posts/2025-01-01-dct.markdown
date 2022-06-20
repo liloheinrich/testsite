@@ -8,19 +8,13 @@ tag: [toc, examples]
 
 ## Context
 
-Test F.
-
 The discrete cosine transform is widely used in signal processing, image compression, and many other forms of data compression. It was invented in the early 1970s by Nasir Ahmed while researching image data compression. The DCT is extremely effective at lossy compression, as it can achieve compression ratios of up to 100:1 with acceptable quality by human perceptive standards.The DCT is the basis for JPEG compression, and is an integral part of many other image and video compression standards.
 
 ## Overview
 
-Test G.
-
 The DCT can be thought of as representing images as a sum of cosine functions with varying frequencies. The basis for the DCT comes from the ability to represent a signal as amounts of each element in a set of discrete range of frequencies. This gives us a measure of what frequencies (or cosine functions) are most important in representing the signal, and allows us to  select only the frequencies that capture the most information about the image. It is important to note that in most cases the DCT results in lossy compression, where the original data is only approximated and not exactly recreated.
 
 ## Algorithm
-
-Test H.
 
 Consider the case of compressing an image using the DCT. The main steps for this process are as follows:
 
@@ -32,8 +26,6 @@ Consider the case of compressing an image using the DCT. The main steps for this
 ![diagram overview]({{"/assets/images/DCT/overview.png" | prepend: site.baseurl }})
 
 ### Represent an image as a matrix:
-
-Test I.
 
 ![image to matrix]({{"/assets/images/DCT/image_to_matrix.png" | prepend: site.baseurl }}){: style="width:260px; float:left; margin:60px 50px; margin-bottom: 0"}
 
@@ -48,8 +40,6 @@ Doing this for the whole image, we create a matrix where each pixel in the image
 Typically when performing the DCT an image matrix is broken up into blocks of size 8x8 to compress individually. For example, if the image from above was 64x64 it would be broken up into the following blocks where each block is it’s own matrix. Each block will be processed separately then reassembled to create the image.
 
 ### Create a DCT matrix:
-
-Test J.
 
 ![dct equation]({{"/assets/images/DCT/equation.png" | prepend: site.baseurl }}){: style="width:280px; float:left; margin: 40px"}
 
@@ -69,15 +59,11 @@ We will use this matrix to find how much of each cosine function is present in t
 
 ### The transformation:
 
-Test K.
-
 Next, we will transform our image from the spatial domain to the frequency domain. This is done by multiplying each row of our image matrix f by our DCT matrix d. This operation can be thought of as finding how similar each row of pixels is with each cosine function. This yields a new matrix a, the same size as our original image that contains coefficients for the ‘amount’ of each vector in d for each row of pixels in our original image. This operation is also normally performed across the columns of the image blocks. 
 
 ![dct multiplication]({{"/assets/images/DCT/mult.png" | prepend: site.baseurl }}){: style="width: 90%; margin-left: 5%"}
 
 ### Compression
-
-Test L.
 
 ![converted matrix]({{"/assets/images/DCT/converted.png" | prepend: site.baseurl }}){: style="width:280px; float:left; margin:40px 40px"}
 
@@ -95,14 +81,10 @@ With large enough divisors in the quantization matrix, many of the values of a w
 
 ### Decoding
 
-Test K.
-
 To decode the image, the matrix a is first reconstructed by reversing the encoding method used. Then, the quantization matrix operation is undone by multiplying a by each value of the original quantization matrix. Lastly, an inverse DCT transformation is performed. To do this, we can simply multiply our matrix of weights a by the inverse of our original DCT matrix. This reconstructs our original image matrix, and we can then visualize it.
 
 
 ## Examples
-
-Test L.
 
 Code used for these examples was adapted from [github.com/gabrielchristo/image-compression](https://github.com/gabrielchristo/image-compression).
 

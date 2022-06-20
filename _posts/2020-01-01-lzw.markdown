@@ -8,8 +8,6 @@ tag: toc
 
 ## Context
 
-Test D.
-
 If you examine a text file character by character or look at an image file pixel by pixel, you’ll probably start noticing repeating patterns. Lempel Ziv Welch (LZW), published in 1984 by Albraham Lempel, Jacob Ziv, and Terry Welch, is a lossless compression algorithm that takes advantage of recurring patterns found in data to reduce file size. The algorithm is lossless, meaning the exact original data can be reconstructed from the compressed version. It is also adaptive and updates its compression model as it processes more data, allowing compression to become more and more efficient.
 
 LZW can be applied to any file type and can be implemented in both software and hardware. Software applications of LZW include the GIF image format, TIFF image format, and Unix file compression utility compress. In the hardware world, LZW is used notably in wifi modems. 
@@ -17,8 +15,6 @@ LZW can be applied to any file type and can be implemented in both software and 
 LZW is also closely related to a few other common compression algorithms, namely, it’s predecessors LZ77 and LZ78, and the deflate/zlib. Deflate/zlib is a combination between a LZ77 variant and Huffman encoding, and is responsible for zip, png, pdf file types.
 
 ## Overview
-
-Test E.
 
 The LZW algorithm works by representing strings of symbols(substrings) with integer codes. Since the integer codes take up less space than the substrings in most scenarios, we achieve compression. LZW utilizes a code dictionary to store the integer codes and the substrings they are associated with. Rather than using a predefined dictionary like some data compression algorithms, LZW is adaptive and builds the dictionary as it processes the input data. 
 
@@ -35,8 +31,6 @@ We then feed in the next character from input and continue the process described
 Since LZW only requires a single pass of the data, it scales linearly and can be described in Big O notation as having O(n) time complexity. 
 
 ## Algorithm
-
-Test F.
 
 Let’s go through an example where we use LZW to compress the string “babaa”. 
 

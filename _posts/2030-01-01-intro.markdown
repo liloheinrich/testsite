@@ -6,8 +6,6 @@ date:   2020-12-12
 tags: [toc]
 ---
 
-Test M.
-
 Every second of our lives we are absorbing and processing information. It surrounds and defines us. It is critical to the way our world functions, and we are constantly transmitting it. However, information transmission has limits. With our current methods of communication we can only send and process so much information at once. We can address our channel limitations, but it is often more effective to simply reduce the amount of information you need to send. This is called compression. 
 
 From the movie you’re watching on Netflix to the song you just played on Spotify, almost every digital medium we interact with has been compressed. The files that we interact with are often fractions of the original size, requiring less hardware space and allowing for quick transmission times. 
