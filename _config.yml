@@ -1,9 +1,9 @@
 # Site settings
-title: Project-2022
+title: eitofis
 description: >
   Fall 2022 semester final project...
 
-baseurl: "/eitofis" # the subpath of your site, e.g. /blog/
+baseurl: "/eitofis/" # the subpath of your site, e.g. /blog/
 url: "https://liloheinrich.github.io" # the base hostname & protocol for your site
 
 author:
