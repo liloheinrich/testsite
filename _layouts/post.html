@@ -20,10 +20,10 @@ layout: default
 							<li><a class="scroll_top" href="{{ site.posts[0].url | prepend: site.baseurl }}">Overview</a></li>
 						{% endif %}
 						{% if page.title == "Topic A" %}
-							<li class="active"><a class="scroll_top" href="#">DCT</a></li>
+							<li class="active"><a class="scroll_top" href="#">Topic A</a></li>
 							{% include post/navbar.html tags=ptags %}
 						{% else %}
-							<li><a class="scroll_top" href="{{ site.posts[1].url | prepend: site.baseurl }}">DCT</a></li>
+							<li><a class="scroll_top" href="{{ site.posts[1].url | prepend: site.baseurl }}">Topic A</a></li>
 						{% endif %}
 						{% if page.title == "Topic B" %}
 							<li class="active"><a class="scroll_top" href="#">Topic B</a></li>
@@ -32,10 +32,10 @@ layout: default
 							<li><a class="scroll_top" href="{{ site.posts[2].url | prepend: site.baseurl }}">Topic B</a></li>
 						{% endif %}
 						{% if page.title == "Topic C" %}
-							<li class="active"><a class="scroll_top" href="#">AC</a></li>
+							<li class="active"><a class="scroll_top" href="#">Topic C</a></li>
 							{% include post/navbar.html tags=ptags %}
 						{% else %}
-							<li><a class="scroll_top" href="{{ site.posts[3].url | prepend: site.baseurl }}">AC</a></li>
+							<li><a class="scroll_top" href="{{ site.posts[3].url | prepend: site.baseurl }}">Topic C</a></li>
 						{% endif %}
 						{% if page.title == "Comparisons" %}
 							<li class="active"><a class="scroll_top" href="#">Comparisons</a></li>
