@@ -14,10 +14,10 @@ layout: default
 								{% assign ttags = page.tags | join: "|" %}
 								{{ttags}}
 						{% endcapture %}
-						{% if page.title == "Overview" %}
-							<li class="active"><a class="scroll_top" href="#">Overview</a></li>
+						{% if page.title == "Lilo Heinrich" %}
+							<li class="active"><a class="scroll_top" href="#">Lilo Heinrich</a></li>
 						{% else %}
-							<li><a class="scroll_top" href="{{ site.posts[0].url | prepend: site.baseurl }}">Overview</a></li>
+							<li><a class="scroll_top" href="{{ site.posts[0].url | prepend: site.baseurl }}">Lilo Heinrich</a></li>
 						{% endif %}
 						{% if page.title == "Topic A" %}
 							<li class="active"><a class="scroll_top" href="#">Topic A</a></li>
