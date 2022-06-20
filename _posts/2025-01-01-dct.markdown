@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Discrete Cosine Transform"
+title:  "Topic A"
 subtitle: ""
 date:   2014-08-19 23:56:45
 tag: [toc, examples]
@@ -8,7 +8,7 @@ tag: [toc, examples]
 
 ## Context
 
-The discrete cosine transform is widely used in signal processing, image compression, and many other forms of data compression. It was invented in the early 1970s by Nasir Ahmed while researching image data compression. The DCT is extremely effective at lossy compression, as it can achieve compression ratios of up to 100:1 with acceptable quality by human perceptive standards.The DCT is the basis for JPEG compression, and is an integral part of many other image and video compression standards.
+The Topic A is widely used in signal processing, image compression, and many other forms of data compression. It was invented in the early 1970s by Nasir Ahmed while researching image data compression. The DCT is extremely effective at lossy compression, as it can achieve compression ratios of up to 100:1 with acceptable quality by human perceptive standards.The DCT is the basis for JPEG compression, and is an integral part of many other image and video compression standards.
 
 ## Overview
 

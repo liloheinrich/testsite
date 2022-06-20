@@ -1,5 +1,5 @@
 Our discrete 2020 fall semester final project on the topic of exploring compression algorithms.
-We cover Discrete Cosine Transform, Lempel-Ziv-Welch and Arithmetic Coding - check it out [here](https://liloheinrich.github.io/testsite/)!
+We cover Topic A, Lempel-Ziv-Welch and Arithmetic Coding - check it out [here](https://liloheinrich.github.io/testsite/)!
 
 <!-- Made by [@eito-fis](https://github.com/eito-fis), [@jackiezeng01](https://github.com/jackiezeng01) and [@jonaskaz](https://github.com/jonaskaz) -->
 
