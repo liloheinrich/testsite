@@ -6,14 +6,12 @@ date:   2020-12-12
 tags: [toc]
 ---
 
-Every second of our lives we are absorbing and processing information. It surrounds and defines us. It is critical to the way our world functions, and we are constantly transmitting it. However, information transmission has limits. With our current methods of communication we can only send and process so much information at once. We can address our channel limitations, but it is often more effective to simply reduce the amount of information you need to send. This is called compression. 
+Engineering: Computing Junior at Olin College of Engineering
 
-From the movie you’re watching on Netflix to the song you just played on Spotify, almost every digital medium we interact with has been compressed. The files that we interact with are often fractions of the original size, requiring less hardware space and allowing for quick transmission times. 
+Seeking Software Engineering Internship Fall 2022 & Spring 2023
 
-Without compression, the fast-paced interconnected world we know today could not exist.
+Some of my recent activities:
 
-However, the methodology for compression is often overlooked. In this project, we will explore three basic compression methods that serve as the building blocks for modern day compression standards:
-
-- [**Topic A**]({{ site.posts[1].url | prepend: site.baseurl }}){: .underline--magical .scroll_top }, which is a transformation widely used in signal processing (similar to the DFT from QEA) and image compression. 
-- [**Lempel Ziv Welch (LZW)**]({{ site.posts[2].url | prepend: site.baseurl }}){: .underline--magical .scroll_top}, which is an adaptive and lossless compression algorithm that is commonly used in GIF and TIFF. 
-- [**Arithmetic Coding (AC)**]({{ site.posts[3].url | prepend: site.baseurl }}){: .underline--magical .scroll_top}, which is a lossless compression algorithm that is similar to Huffman coding, and nears the theoretical limits of lossless compression. 
+- [**Topic A**]({{ site.posts[1].url | prepend: site.baseurl }}){: .underline--magical .scroll_top } currently interning at Honeywell Aerospace in Phoenix, working in the CNS division on TXD, a new integrated traffic surveillance system.
+- [**Lempel Ziv Welch (LZW)**]({{ site.posts[2].url | prepend: site.baseurl }}){: .underline--magical .scroll_top} just returned from a semester studying German and Classical Music in Vienna for my Arts, Humanities, and Social Science credits. 
+- [**Arithmetic Coding (AC)**]({{ site.posts[3].url | prepend: site.baseurl }}){: .underline--magical .scroll_top} recently, a white paper on FCC Spectrum Auction 107 that I co-authored with a team of students from the Olin Satellite & Spectrum Technology + Policy Group was accepted by the Research Conference on Communications, Information and Internet Policy (TPRC) 2022. 
